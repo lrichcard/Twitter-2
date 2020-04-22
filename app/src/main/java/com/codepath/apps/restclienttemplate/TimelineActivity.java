@@ -155,6 +155,7 @@ public class TimelineActivity extends AppCompatActivity {
              public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
                  Log.e(TAG, "onFailure!", throwable);
              }
+
          });
     }
 }
