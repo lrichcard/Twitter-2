@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,12 +11,12 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -23,10 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:textStyle="bold"
+        android:textSize="18dp"
         tools:text="Jkened" />
 
     <TextView
@@ -34,8 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvScreenName"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:lastBaselineToBottomHeight=".5dp"
         tools:text="This is my Tweet!!" />
@@ -45,12 +49,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBody"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="10dp"
+        android:textSize="10dp"
+        android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:gravity="right"
         android:textStyle="bold|italic"
         tools:text="Time" />
+
+    <TextView
+        android:id="@+id/etRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTimeStamp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        tools:text="Retweet" />
 </RelativeLayout>
 

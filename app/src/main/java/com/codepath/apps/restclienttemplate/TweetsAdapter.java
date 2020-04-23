@@ -90,7 +90,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             Glide.with(context)
                     .load(tweet.user.profileImageUrl)
                     .apply(new RequestOptions()
-                            .transform(new RoundedCorners(50)))
+                            .transform(new RoundedCorners(100)))
                     .into(ivProfileImage);
 
         }
