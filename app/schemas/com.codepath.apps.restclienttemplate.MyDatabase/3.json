@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "database": {
-    "version": 2,
-    "identityHash": "76174a05ad9e6e5eb25401958ef4a41c",
+    "version": 3,
+    "identityHash": "edb357502f10e106e32707643abd1808",
     "entities": [
       {
         "tableName": "SampleModel",
@@ -82,7 +82,7 @@
       },
       {
         "tableName": "User",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT, `location` TEXT, `screenName` TEXT, `profileImageUrl` TEXT, PRIMARY KEY(`id`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT, `location` TEXT, `followers_count` TEXT, `screenName` TEXT, `profileImageUrl` TEXT, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -99,6 +99,12 @@
           {
             "fieldPath": "location",
             "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "followers_count",
+            "columnName": "followers_count",
             "affinity": "TEXT",
             "notNull": false
           },
@@ -128,7 +134,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '76174a05ad9e6e5eb25401958ef4a41c')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'edb357502f10e106e32707643abd1808')"
     ]
   }
 }

@@ -22,6 +22,15 @@ public class User {
     public String name;
 
     @ColumnInfo
+    public String location;
+
+    @ColumnInfo
+    public String followers_count;
+
+    @ColumnInfo
+    public String favourites_count;
+
+    @ColumnInfo
     public String screenName;
 
     @ColumnInfo
@@ -34,6 +43,9 @@ public class User {
         User user = new User();
         user.id = jsonObject.getLong("id");
         user.name = jsonObject.getString("name");
+        user.location = jsonObject.getString("location");
+        user.followers_count = jsonObject.getString("followers_count");
+        user.favourites_count = jsonObject.getString("favourites_count");
         user.screenName = jsonObject.getString("screen_name");
         user.profileImageUrl = jsonObject.getString("profile_image_url_https");
         return user;

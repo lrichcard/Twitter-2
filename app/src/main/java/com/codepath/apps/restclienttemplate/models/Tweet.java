@@ -76,4 +76,6 @@ public class Tweet {
     public User getUser() {
         return user;
     }
+
+
 }
