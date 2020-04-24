@@ -41,6 +41,7 @@
         android:layout_toEndOf="@+id/ivProfileImage"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:textColor="#FFFFCC"
         tools:text="Jkened" />
 
     <TextView
@@ -60,29 +61,29 @@
         android:id="@+id/tvTimeStamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvName"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="12dp"
-        android:layout_toEndOf="@+id/tvScreenName"
+        android:layout_below="@+id/tvFollowers"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
         android:gravity="right"
         android:textColor="#A3A3A3"
         android:textSize="14dp"
-        tools:text="Time" />
+        tools:text="Last Post" />
 
     <TextView
         android:id="@+id/tvFollowers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBody"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="9dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="5dp"
         android:layout_toEndOf="@+id/tvFriends"
         android:gravity="right"
-        android:textSize="10dp"
-        android:textStyle="italic"
         android:textColor="#FFFFCC"
+        android:textSize="12dp"
+        android:textStyle="italic"
         tools:text="followers" />
 
     <TextView
@@ -95,39 +96,24 @@
         android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:gravity="right"
-        android:textSize="10dp"
-        android:textStyle="italic"
         android:textColor="#FFFFCC"
+        android:textSize="12dp"
+        android:textStyle="italic"
         tools:text="Friends" />
-
-    <TextView
-        android:id="@+id/tvLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvBody"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toEndOf="@+id/tvLikes"
-        android:gravity="right"
-        android:textSize="10dp"
-        android:textStyle="italic"
-        android:textColor="#FFFFCC"
-        tools:text="Haiti" />
 
     <TextView
         android:id="@+id/tvLikes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBody"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="9dp"
         android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/tvFollowers"
         android:gravity="right"
-        android:textSize="10dp"
-        android:textStyle="italic"
         android:textColor="#FFFFCC"
+        android:textSize="12dp"
+        android:textStyle="italic"
         tools:text="Likes" />
 </RelativeLayout>
 

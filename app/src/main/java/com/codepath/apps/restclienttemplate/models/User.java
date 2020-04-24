@@ -28,6 +28,9 @@ public class User {
     public String followers_count;
 
     @ColumnInfo
+    public String friends_count;
+
+    @ColumnInfo
     public String favourites_count;
 
     @ColumnInfo
@@ -46,6 +49,7 @@ public class User {
         user.location = jsonObject.getString("location");
         user.followers_count = jsonObject.getString("followers_count");
         user.favourites_count = jsonObject.getString("favourites_count");
+        user.friends_count = jsonObject.getString("friends_count");
         user.screenName = jsonObject.getString("screen_name");
         user.profileImageUrl = jsonObject.getString("profile_image_url_https");
         return user;

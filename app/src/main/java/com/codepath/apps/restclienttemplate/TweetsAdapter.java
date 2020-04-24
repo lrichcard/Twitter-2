@@ -71,6 +71,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvName;
         TextView tvScreenName;
         TextView tvFollowers;
+        TextView tvFriends;
         TextView tvLikes;
         TextView tvLocation;
         TextView tvTimeStamp;
@@ -82,9 +83,10 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody = itemView.findViewById(R.id.tvBody);
             tvName = itemView.findViewById(R.id.tvName);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
+            tvFriends = itemView.findViewById(R.id.tvFriends);
+
             tvFollowers = itemView.findViewById(R.id.tvFollowers);
             tvLikes = itemView.findViewById(R.id.tvLikes);
-            tvLocation = itemView.findViewById(R.id.tvLocation);
             tvTimeStamp = itemView.findViewById(R.id.tvTimeStamp);
         }
 
@@ -92,10 +94,11 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody.setText(tweet.body);
             tvName.setText(tweet.user.name);
             tvScreenName.setText("@" + tweet.user.screenName);
-            tvFollowers.setText("followers: " + tweet.user.followers_count);
-            tvLikes.setText("Like" + tweet.user.favourites_count);
-            tvLocation.setText("Lieu: " + tweet.user.location);
-            tvTimeStamp.setText("Posted " + tweet.getFormattedTimeStamp()+" ago");
+            tvFriends.setText("Friends\n" + tweet.user.friends_count);
+            tvFollowers.setText("Followers\n " + tweet.user.followers_count);
+            tvLikes.setText("Likes\n" + tweet.user.favourites_count);
+
+            tvTimeStamp.setText("Last Post " + tweet.getFormattedTimeStamp()+" ago");
 //            Glide.with(context)
 //                    .load(tweet.user.profileImageUrl).into(ivProfileImage);
 
