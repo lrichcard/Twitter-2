@@ -94,7 +94,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody.setText(tweet.body);
             tvName.setText(tweet.user.name);
             tvScreenName.setText("@" + tweet.user.screenName);
-            tvFriends.setText("Friends\n" + tweet.user.friends_count);
+            tvFriends.setText("Friends" + "\n"+ tweet.user.friends_count);
             tvFollowers.setText("Followers\n " + tweet.user.followers_count);
             tvLikes.setText("Likes\n" + tweet.user.favourites_count);
 

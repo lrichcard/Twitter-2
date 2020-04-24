@@ -84,7 +84,9 @@
         android:textColor="#FFFFCC"
         android:textSize="12dp"
         android:textStyle="italic"
-        tools:text="followers" />
+        tools:text="followers"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/tvFriends"
@@ -99,7 +101,9 @@
         android:textColor="#FFFFCC"
         android:textSize="12dp"
         android:textStyle="italic"
-        tools:text="Friends" />
+        tools:text="Friends"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/tvLikes"
@@ -114,6 +118,8 @@
         android:textColor="#FFFFCC"
         android:textSize="12dp"
         android:textStyle="italic"
-        tools:text="Likes" />
+        tools:text="Likes"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
 </RelativeLayout>
 
